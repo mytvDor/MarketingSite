@@ -1,4 +1,4 @@
-import { Plus_Jakarta_Sans, DM_Mono } from "next/font/google";
+import { DM_Mono, Plus_Jakarta_Sans } from "next/font/google";
 
 import "./globals.css";
 import { Navbar } from "@/components/site/navbar";
@@ -6,11 +6,13 @@ import { Navbar } from "@/components/site/navbar";
 const geistSans = Plus_Jakarta_Sans({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const geistMono = DM_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata = {
@@ -46,4 +48,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
