@@ -53,7 +53,7 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Button
+          {/* <Button
             variant="outline"
             size="sm"
             className="hidden border-neutral-200 text-xs font-medium text-neutral-800 hover:bg-neutral-100 sm:inline-flex"
@@ -65,7 +65,7 @@ export function Navbar() {
             className="hidden bg-yellow-500 px-4 text-xs font-semibold text-neutral-900 shadow-sm hover:bg-yellow-400 md:inline-flex"
           >
             Book a Strategy Call
-          </Button>
+          </Button> */}
           <button
             type="button"
             aria-label="Toggle navigation"

@@ -1,4 +1,13 @@
-import { CheckCircle2 } from "lucide-react";
+import {
+  BarChart3,
+  Building2,
+  CheckCircle2,
+  Globe2,
+  Newspaper,
+  Rocket,
+  Target,
+  Users,
+} from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -101,36 +110,43 @@ export default function Home() {
                   Across campaigns and client engagements
                 </p>
               </CardHeader>
-              <CardContent className="flex flex-col gap-4 p-0 text-xs text-neutral-700">
+              <CardContent className="flex flex-col gap-5 p-0 text-xs text-neutral-700">
                 <div className="flex items-center justify-between gap-4">
-                  <Badge
-                    variant="subtle"
-                    className="bg-yellow-100 text-yellow-800"
-                  >
-                    Performance First
-                  </Badge>
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-yellow-50 text-yellow-800">
+                      <Target className="h-4 w-4" />
+                    </div>
+                    <Badge
+                      variant="subtle"
+                      className="bg-yellow-100 text-yellow-800"
+                    >
+                      Performance First
+                    </Badge>
+                  </div>
                   <div className="text-right text-[0.7rem] leading-tight text-neutral-600">
                     <p>30+ active clients</p>
                     <p>350+ campaigns</p>
                   </div>
                 </div>
-                <div className="grid gap-3 sm:grid-cols-2">
-                  <div className="space-y-1">
-                    <p className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-neutral-500">
-                      Reach Generated
+                <div className="grid gap-3 sm:grid-cols-2 sm:items-stretch">
+                  <div className="flex h-full flex-col justify-between space-y-1 rounded-2xl border border-neutral-200 bg-neutral-50 p-3">
+                    <p className="flex items-center gap-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-neutral-500">
+                      <BarChart3 className="h-3 w-3 text-yellow-500" />
+                      <span>Reach Generated</span>
                     </p>
-                    <p className="text-lg font-semibold text-neutral-900">
+                    <p className="mt-1 text-lg font-semibold text-neutral-900">
                       500+ Million
                     </p>
                     <p className="text-[0.7rem] text-neutral-600">
                       Views across digital platforms
                     </p>
                   </div>
-                  <div className="space-y-1">
-                    <p className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-neutral-500">
-                      Creator Network
+                  <div className="flex h-full flex-col justify-between space-y-1 rounded-2xl border border-neutral-200 bg-neutral-50 p-3">
+                    <p className="flex items-center gap-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-neutral-500">
+                      <Users className="h-3 w-3 text-yellow-500" />
+                      <span>Creator Network</span>
                     </p>
-                    <p className="text-lg font-semibold text-neutral-900">
+                    <p className="mt-1 text-lg font-semibold text-neutral-900">
                       1,000+ Influencers
                     </p>
                     <p className="text-[0.7rem] text-neutral-600">
@@ -138,26 +154,29 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="grid gap-3 sm:grid-cols-3">
-                  <div className="space-y-1">
-                    <p className="text-sm font-semibold text-neutral-900">
-                      28+ Brands
+                <div className="grid gap-3 sm:grid-cols-3 sm:items-stretch">
+                  <div className="flex h-full flex-col justify-between space-y-1 rounded-2xl border border-neutral-200 bg-white p-3">
+                    <p className="flex items-center gap-2 text-sm font-semibold text-neutral-900">
+                      <Building2 className="h-4 w-4 text-yellow-500" />
+                      <span>28+ Brands</span>
                     </p>
                     <p className="text-[0.7rem] text-neutral-600">
                       Partnered across industries
                     </p>
                   </div>
-                  <div className="space-y-1">
-                    <p className="text-sm font-semibold text-neutral-900">
-                      5000+ Publications
+                  <div className="flex h-full flex-col justify-between space-y-1 rounded-2xl border border-neutral-200 bg-white p-3">
+                    <p className="flex items-center gap-2 text-sm font-semibold text-neutral-900">
+                      <Newspaper className="h-4 w-4 text-yellow-500" />
+                      <span>5000+ Publications</span>
                     </p>
                     <p className="text-[0.7rem] text-neutral-600">
                       International and national media
                     </p>
                   </div>
-                  <div className="space-y-1">
-                    <p className="text-sm font-semibold text-neutral-900">
-                      20,000+ Pages
+                  <div className="flex h-full flex-col justify-between space-y-1 rounded-2xl border border-neutral-200 bg-white p-3">
+                    <p className="flex items-center gap-2 text-sm font-semibold text-neutral-900">
+                      <Globe2 className="h-4 w-4 text-yellow-500" />
+                      <span>20,000+ Pages</span>
                     </p>
                     <p className="text-[0.7rem] text-neutral-600">
                       Reach managed across social
@@ -226,35 +245,70 @@ export default function Home() {
             that not only looks good but also performs.
           </p>
         </div>
-        <div className="grid gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
-              Active Clients
-            </p>
-            <p className="mt-2 text-2xl font-semibold text-yellow-700">30+</p>
-            <p className="mt-1 text-xs text-neutral-600">
-              Ongoing growth partnerships across key sectors
-            </p>
-          </div>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
-              Campaigns
-            </p>
-            <p className="mt-2 text-2xl font-semibold text-yellow-700">350+</p>
-            <p className="mt-1 text-xs text-neutral-600">
-              Successfully planned and executed campaigns
-            </p>
-          </div>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
-              Focus
-            </p>
-            <p className="mt-2 text-2xl font-semibold text-yellow-700">ROI</p>
-            <p className="mt-1 text-xs text-neutral-600">
-              Strategy, creative, and systems aimed at revenue
-            </p>
-          </div>
-        </div>
+      <div className="flex flex-col gap-4">
+
+  {/* Active Clients */}
+  <div className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-6 transition hover:shadow-md">
+    <div className="flex items-center gap-4">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-50 text-yellow-600">
+        <Users className="h-5 w-5" />
+      </div>
+
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
+          Active Clients
+        </p>
+        <p className="mt-1 text-sm text-neutral-600">
+          Ongoing growth partnerships across key sectors
+        </p>
+      </div>
+    </div>
+
+    <p className="text-3xl font-semibold text-yellow-700">30+</p>
+  </div>
+
+  {/* Campaigns */}
+  <div className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-6 transition hover:shadow-md">
+    <div className="flex items-center gap-4">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-50 text-yellow-600">
+        <Rocket className="h-5 w-5" />
+      </div>
+
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
+          Campaigns
+        </p>
+        <p className="mt-1 text-sm text-neutral-600">
+          Successfully planned and executed campaigns
+        </p>
+      </div>
+    </div>
+
+    <p className="text-3xl font-semibold text-yellow-700">350+</p>
+  </div>
+
+  {/* Focus */}
+  <div className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-6 transition hover:shadow-md">
+    <div className="flex items-center gap-4">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-50 text-yellow-600">
+        <Target className="h-5 w-5" />
+      </div>
+
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
+          Focus
+        </p>
+        <p className="mt-1 text-sm text-neutral-600">
+          Strategy, creative, and systems aimed at revenue
+        </p>
+      </div>
+    </div>
+
+    <p className="text-3xl font-semibold text-yellow-700">ROI</p>
+  </div>
+
+</div>
+
       </section>
 
       <section className="space-y-10">
@@ -628,4 +682,3 @@ export default function Home() {
     </section>
   );
 }
-
