@@ -9,6 +9,8 @@ import {
   Users,
 } from "lucide-react";
 
+import { FaWhatsapp } from "react-icons/fa";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -89,7 +91,7 @@ export default function Home() {
           <Card className="relative grid overflow-hidden sm:grid-cols-[1.1fr,1.1fr]">
             <div className="relative h-52 w-full overflow-hidden sm:h-64">
               <img
-                src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="/hero.avif"
                 alt="Vision9 team planning campaigns and content"
                 className="h-full w-full object-cover"
               />
@@ -245,70 +247,67 @@ export default function Home() {
             that not only looks good but also performs.
           </p>
         </div>
-      <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
+          {/* Active Clients */}
+          <div className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-6 transition hover:shadow-md">
+            <div className="flex items-center gap-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-50 text-yellow-600">
+                <Users className="h-5 w-5" />
+              </div>
 
-  {/* Active Clients */}
-  <div className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-6 transition hover:shadow-md">
-    <div className="flex items-center gap-4">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-50 text-yellow-600">
-        <Users className="h-5 w-5" />
-      </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
+                  Active Clients
+                </p>
+                <p className="mt-1 text-sm text-neutral-600">
+                  Ongoing growth partnerships across key sectors
+                </p>
+              </div>
+            </div>
 
-      <div>
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
-          Active Clients
-        </p>
-        <p className="mt-1 text-sm text-neutral-600">
-          Ongoing growth partnerships across key sectors
-        </p>
-      </div>
-    </div>
+            <p className="text-3xl font-semibold text-yellow-700">30+</p>
+          </div>
 
-    <p className="text-3xl font-semibold text-yellow-700">30+</p>
-  </div>
+          {/* Campaigns */}
+          <div className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-6 transition hover:shadow-md">
+            <div className="flex items-center gap-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-50 text-yellow-600">
+                <Rocket className="h-5 w-5" />
+              </div>
 
-  {/* Campaigns */}
-  <div className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-6 transition hover:shadow-md">
-    <div className="flex items-center gap-4">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-50 text-yellow-600">
-        <Rocket className="h-5 w-5" />
-      </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
+                  Campaigns
+                </p>
+                <p className="mt-1 text-sm text-neutral-600">
+                  Successfully planned and executed campaigns
+                </p>
+              </div>
+            </div>
 
-      <div>
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
-          Campaigns
-        </p>
-        <p className="mt-1 text-sm text-neutral-600">
-          Successfully planned and executed campaigns
-        </p>
-      </div>
-    </div>
+            <p className="text-3xl font-semibold text-yellow-700">350+</p>
+          </div>
 
-    <p className="text-3xl font-semibold text-yellow-700">350+</p>
-  </div>
+          {/* Focus */}
+          <div className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-6 transition hover:shadow-md">
+            <div className="flex items-center gap-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-50 text-yellow-600">
+                <Target className="h-5 w-5" />
+              </div>
 
-  {/* Focus */}
-  <div className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-6 transition hover:shadow-md">
-    <div className="flex items-center gap-4">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-50 text-yellow-600">
-        <Target className="h-5 w-5" />
-      </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
+                  Focus
+                </p>
+                <p className="mt-1 text-sm text-neutral-600">
+                  Strategy, creative, and systems aimed at revenue
+                </p>
+              </div>
+            </div>
 
-      <div>
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-500">
-          Focus
-        </p>
-        <p className="mt-1 text-sm text-neutral-600">
-          Strategy, creative, and systems aimed at revenue
-        </p>
-      </div>
-    </div>
-
-    <p className="text-3xl font-semibold text-yellow-700">ROI</p>
-  </div>
-
-</div>
-
+            <p className="text-3xl font-semibold text-yellow-700">ROI</p>
+          </div>
+        </div>
       </section>
 
       <section className="space-y-10">
@@ -679,6 +678,16 @@ export default function Home() {
           </Button> */}
         </div>
       </section>
+
+      <a
+        href="https://wa.me/918147637913"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-all hover:scale-110 hover:bg-green-600 focus:outline-none focus:ring-4 focus:ring-green-300"
+      >
+        <FaWhatsapp size={28} />
+      </a>
     </section>
   );
 }

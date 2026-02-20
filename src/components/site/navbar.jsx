@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
@@ -28,8 +28,14 @@ export function Navbar() {
           className="flex items-center gap-2"
           onClick={handleClose}
         >
-          <div className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-yellow-400 via-yellow-300 to-yellow-500 text-sm font-bold text-neutral-900 shadow-md">
-            V9
+          <div className="relative h-12 w-12 overflow-hidden rounded-xl shadow-md">
+            <Image
+              src="/logo.jpg"
+              alt="Vision9 Logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
           <div className="flex flex-col leading-tight">
             <span className="text-sm font-semibold tracking-wide text-neutral-900">

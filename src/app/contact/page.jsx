@@ -15,6 +15,9 @@ export default function ContactPage() {
           right now. We&apos;ll review and come back with a clear starting point
           and next steps.
         </p>
+        <h1 className="text-3xl font-semibold text-neutral-900 sm:text-4xl">
+        <span className="text-yellow-500">Call Now</span> +91 8147637913
+        </h1>
       </header>
 
       <div className="mt-8 grid gap-10 lg:grid-cols-[1.3fr,1.1fr]">
@@ -93,7 +96,7 @@ export default function ContactPage() {
           </Button> 
         </form> */}
 
-        <aside className="space-y-5 rounded-2xl border border-neutral-200 bg-neutral-50 p-6 text-sm text-neutral-800">
+        {/* <aside className="space-y-5 rounded-2xl border border-neutral-200 bg-neutral-50 p-6 text-sm text-neutral-800">
           <div>
             <h2 className="text-sm font-semibold text-neutral-900">
               What happens after you submit?
@@ -116,7 +119,7 @@ export default function ContactPage() {
               performance-led marketing.
             </p>
           </div>
-        </aside>
+        </aside> */}
       </div>
     </section>
   );
